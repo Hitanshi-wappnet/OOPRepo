@@ -21,7 +21,6 @@ class HDFC(Bank):
     def __init__(self):
         #super().__init__()
 
-        #if(super().choice_bank==1):
         print("Thank You for choicing HDFC Bank..")
         choice=int(input("Welcome to HDFC Bank \n 1.Create New Account \n 2.Display Balance in Account \n 3.Calculate Interest \n 4.Deposit an Amount in Account \n 5.Withdraw an Amount in Account \n 6.Make an FD \n 7.Dispaly Maturity Amount of FD \n Press according to your choice \n"))
 
@@ -236,23 +235,23 @@ class BOI(Bank):
         else:
             print("You might entered Wrong Choice...")
 
-#B=Bank()           
+B=Bank()           
 ch=Bank.choice_bank
 if(ch==1):
     while(1):
-        #H=HDFC()
+        H=HDFC()
         prefer=int((input("If you want to continue This Service Then Press 1 And if you don't want then Press 0\n")))
         if(prefer==0):
             exit()
 if(ch==2):
     while(1):
-        #S=SBI()
+        S=SBI()
         prefer=int((input("If you want to continue This Service Then Press 1 And if you don't want then Press 0\n")))
         if(prefer==0):
             exit()
 if(ch==3):
     while(1):
-        #B=BOI()
+        B=BOI()
         prefer=int((input("If you want to continue This Service Then Press 1 And if you don't want then Press 0\n")))
         if(prefer==0):
             exit()
